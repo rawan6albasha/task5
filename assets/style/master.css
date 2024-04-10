@@ -1,0 +1,519 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --black: #212934;
+  font-family: sans-serif;
+}
+
+/*________________________________________header_______________________________________ */
+/* __________________________hero________________________ */
+header .hero {
+  position: relative;
+  top: 143px;
+  height: 100vh;
+}
+/*  ___________________________nav____________________________*/
+
+header nav {
+  box-shadow: 0px 0px 20px 0px #c3c3c3;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+/*  ___________________________nav1____________________________*/
+header nav .nav1,
+header nav .nav2 {
+  padding: 9px 101px;
+}
+
+header nav .nav1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  color: wheat;
+  background-color: var(--black);
+}
+
+header nav .nav1 ul li {
+  padding-left: 5px;
+}
+/*  ___________________________nav2____________________________*/
+
+
+
+header .nav2 .action a i{
+  font-size: 30px;
+  color: #212934;
+}
+
+
+
+header nav .nav2 .action li img {
+  width: 36px;
+}
+
+header nav .nav2 .action li{
+  padding-left: 32px;
+}
+
+header nav .nav2 .action .basket{
+  position: relative;
+}
+
+header nav .nav2 .action .basket::after {
+  content: "7";
+  background-color: #e9eef5;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  margin-top: -40px;
+  margin-left: 27px;
+  text-align: center;
+}
+
+header nav .nav2 .action .profil::after {
+  content: "+99";
+  background-color: #e9eef5;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 37%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 35px;
+  height: 20px;
+  margin-top: -31px;
+  margin-left: 26px;
+  text-align: center;
+}
+
+header nav .nav2 {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+header nav .nav2 .logo {
+  width: 13vh;
+}
+
+header nav .nav2 .pages li{
+  padding: 0px 63px;
+}
+
+header nav .nav2 .pages li a {
+  color: var(--black);
+  font-size: 21px;
+}
+/*_______________________ bar list ____________________*/
+header nav .nav2 .fa-bars {
+  display: none;
+}
+
+
+
+
+
+/* ________________________________________________________________ */
+ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #c4cbd7;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+/* ________________main__________________________________________________________ */
+main .discription {
+  width: 464px;
+  text-align: center;
+}
+
+main .discription h2 {
+  font-size: 38px;
+  margin-top: 63px;
+  margin-bottom: 10px;
+}
+/* ____________________________form________________ */
+main .form,
+main .Featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 101px;
+}
+
+main .form .prod,
+main .Featured .cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .form .prod .pro {
+  padding: 13px 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* _________________________________footer_______________________________________________________________________ */
+footer {
+  background-color: var(--black);
+}
+/* ___________________first part________________________ */
+footer .informations {
+  display: flex;
+  padding: 0px 107px;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+footer .informations .tit {
+  color: #c4cbd7;
+  margin-top: 24px;
+  margin-bottom: 9px;
+  font-size: 23px;
+}
+
+footer .informations .tit1 {
+  color: #69bb7e;
+  margin-top: 24px;
+  margin-bottom: 9px;
+  font-size: 23px;
+}
+
+footer .informations hr {
+  border: none;
+  width: 361px;
+  height: 1px;
+  background-color: #5e5f61;
+  align-items: center;
+}
+
+footer .informations p {
+  margin: 6px 8px;
+}
+
+footer .informations .Zay a {
+  display: flex;
+  align-items: center;
+}
+
+footer .informations :nth-child(8) {
+  color: #59ab6e;
+}
+
+footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 118px;
+}
+
+footer .hr2 {
+  margin: 0px 120px;
+  border: none;
+  height: 1px;
+  background-color: #5e5f61;
+}
+
+footer .social .icons {
+  display: flex;
+}
+
+footer .social input[type="email"] {
+  background-color: transparent;
+  border: 2px solid #5e5f61;
+  height: 34px;
+}
+
+footer .social input[type="button"] {
+  margin-left: -6px;
+  height: 34px;
+  color: #c4cbd7;
+  background-color: #59ab6e;
+  border: none;
+  width: 60px;
+  cursor: pointer;
+}
+ /*_______________________ secand footer_______________________ */
+footer .copy {
+  background-color: #1d242d;
+  display: flex;
+}
+
+footer .copy p {
+  color: #c4cbd7;
+  background-color: #1d242d;
+  padding: 25px 0px 25px 122px;
+}
+
+footer .copy a {
+  text-decoration: underline;
+}
+
+.social a {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 0.1px solid #5e5f61;
+  margin-left: 5px;
+  width: 29px;
+  height: 29px;
+}
+
+ul a i {
+  margin-right: 9px;
+}
+
+
+
+/*____________________________________________Media Queries__________________________________________________________*/
+
+/* _________________________Styles for large screens_____________________________________ */
+@media only screen and (min-width: 1200px) {
+  header {
+    width: 100%;
+  }
+}
+
+/* _________________________________________Styles for medium screens___________________________________ */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  header {
+    width: 100%;
+  }
+
+  footer .informations hr {
+    width: 213px;
+  }
+
+  main .form .prod .pro {
+    padding: 13px 21px;
+  }
+
+  main .form,
+  main .Featured {
+    padding: 188px 101px;
+  }
+
+  header nav .nav2 .pages li a {
+    font-size: 16px;
+  }
+
+  header nav .nav2 .pages li {
+    padding: 0 40px 0 0;
+  }
+
+  header .nav2 .action a i {
+    font-size: 21px;
+  }
+
+  header nav .nav2 .action li {
+    padding-left: 9px;
+  }
+
+  header nav .nav2 .action .profil::after {
+    height: 17px;
+    margin-top: -31px;
+    margin-left: 15px;
+    font-size: 13px;
+  }
+
+  header nav .nav2 .action .basket::after {
+    width: 21px;
+    height: 17px;
+    margin-top: -33px;
+    margin-left: 17px;
+  }
+}
+
+/* _______________________________Styles for small to medium screens _____________________________________*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header {
+    width: 100%;
+
+  }
+  header .hero {
+    position: relative;
+  }
+/* _______________________________nav2__________________________ */
+  header nav .nav2 .action,
+  header nav .nav2 .pages {
+    display: none;
+  }
+
+  header nav .nav2 .fa-bars {
+    display: contents;
+    font-size: 26px;
+    color: #5e5f61;
+  }
+  header nav .nav2 .bar-list {
+    display: contents;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px -129px;
+    background-color: var(--black);
+    top: 131px;
+}
+/* _____________________________________________________________________ */
+  main .form .prod,
+  main .Featured .cards {
+    flex-direction: column;
+  }
+
+  footer .informations {
+    flex-direction: column;
+  }
+
+  footer .informations hr {
+    width: 572px;
+  }
+
+  footer .informations .tit1 {
+    font-size: 33px;
+  }
+
+  footer .informations a {
+    font-size: 18px;
+  }
+
+  footer .hr2 {
+    margin: 0px 19px;
+  }
+
+  main .form,
+  main .Featured {
+    padding: 195px 101px;
+  }
+
+  a .form .prod .pro {
+    padding: 0px 68px;
+  }
+}
+
+/*_________________________________________ Styles for small screens ____________________________________*/
+@media only screen and (max-width: 767px) {
+  header {
+    width: 100%;
+  }
+
+  header nav .nav1 {
+    display: none;
+  }
+
+  header nav .nav2 .action,
+  header nav .nav2 .pages {
+    display: none;
+  }
+
+  header nav .nav2 .fa-bars {
+    display: contents;
+    font-size: 20px;
+    color: #5e5f61;
+  }
+
+  header nav .nav2 {
+    padding: 0px 14px;
+  }
+
+  header nav .nav2 .logo {
+    width: 9vh;
+  }
+
+  footer .informations {
+    flex-direction: column;
+    padding: 0px 11px;
+  }
+
+  footer .informations hr {
+    width: 257px;
+  }
+
+  footer .hr2 {
+    margin: 0px 19px;
+  }
+
+  main .form,
+  main .Featured,
+  footer .hr2 {
+    padding: 0px 6px;
+  }
+
+  a .form .prod .pro {
+    padding: 0px 68px;
+  }
+
+  header .hero {
+    top: 47px;
+  }
+
+  footer .social {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 24px 13px;
+    align-items: flex-start;
+  }
+
+  footer .copy p {
+    font-size: 9px;
+    padding: 25px 0px 25px 9px;
+  }
+
+  footer .copy a {
+    font-size: 10px;
+    padding-left: 0px;
+  }
+
+  footer .informations .tit1 {
+    font-size: 17px;
+  }
+
+  footer .informations a {
+    font-size: 14px;
+  }
+
+  footer .informations .tit {
+    font-size: 17px;
+  }
+
+  main .form .prod,
+  main .Featured .cards {
+    flex-direction: column;
+  }
+
+  main .discription h2 {
+    font-size: 28px;
+  }
+
+  main .discription {
+    font-size: 15px;
+    width: 286px;
+  }
+
+  main #Services {
+    width: 259px;
+    padding: 80px 10px;
+  }
+  main .form .prod .pro {
+    padding: 13px 0px;
+  }
+}

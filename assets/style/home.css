@@ -1,0 +1,341 @@
+/*_______________________________________ hero _____________________*/
+
+
+header .hero {
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    padding: 9px 101px;
+    flex-direction: column;
+    position: relative;
+
+
+
+}
+
+header .hero .contener {
+    display: flex;
+    align-items: center;
+}
+
+header .hero .fa-angle-right {
+    color: #a3cdae;
+    font-size: 62px;
+    margin-right: -1297px;
+    margin-top: 287px;
+    cursor: pointer;
+    position: absolute;
+}
+
+header .hero .fa-angle-left {
+    color: #a3cdae;
+    font-size: 62px;
+    margin-left: -1297px;
+    margin-top: 287px;
+    cursor: pointer;
+    position: absolute;
+}
+
+header .hero .parghraf {
+    margin-left: 122px;
+}
+
+header .hero .parghraf .p1 {
+    font-size: 35px;
+}
+
+header .hero .parghraf .p2 {
+    font-size: 26px;
+}
+
+header .hero img {
+    width: 545px;
+    margin-right: 85px;
+}
+
+header .hero span {
+    background-color: #59ab6e;
+    width: 70px;
+    height: 3px;
+    margin-right: 81px;
+    cursor: pointer;
+}
+
+header .hero span::before {
+    content: "";
+    background-color: #a3cdae;
+    display: inline-block;
+    width: 70px;
+    height: 3px;
+    margin-left: 87px;
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+
+header .hero span::after {
+    content: "";
+    background-color: #a3cdae;
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin-left: -87px;
+    margin-top: -18px;
+    cursor: pointer;
+}
+
+/* _____________________main_____________________________________________________________________________________ */
+/* _______________________Categories___________________________ */
+main .form .prod .pro img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 262px;
+    margin: 51px 0px;
+}
+
+main .form .prod .pro input {
+    margin: 17px 0px;
+    border-radius: 9%;
+    background-color: #59ab6e;
+    color: white;
+    border: none;
+    width: 70px;
+    height: 27px;
+    cursor: pointer;
+    -webkit-border-radius: 9%;
+    -moz-border-radius: 9%;
+    -ms-border-radius: 9%;
+    -o-border-radius: 9%;
+}
+
+/* __________________________Featured________________________ */
+main .Featured .cards .card .imgCard {
+
+    width: 348px;
+    margin-bottom: 25px;
+}
+
+main .Featured,
+main .Featured .cards {
+    background-color: #e9eef5;
+}
+
+main .Featured .cards {
+    margin-top: 40px;
+
+}
+
+main .Featured .cards .card {
+
+    width: 348px;
+    margin: 13px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px #c3c3c3;
+}
+
+main .Featured .cards .card .rate {
+    display: flex;
+    align-items: center;
+}
+
+main .Featured .cards .card .rate i {
+    font-size: 24px;
+    color: #ede861;
+}
+
+main .Featured .cards .card .rate .price {
+    color: gray;
+    margin-left: 124px;
+}
+
+main .Featured .cards .card .detals {
+    margin: 17px 25px;
+}
+
+main .Featured .cards .card .review {
+    margin-right: 218px;
+    margin-bottom: 17px;
+    color: gray;
+}
+
+
+/*____________________________________________Media Queries______________________________________*/
+
+/*_______________________________ Large screen _____________________________*/
+@media (min-width: 1200px) {}
+
+/*___________________________medium screen ______________________*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    header .hero {
+        padding: 91px 101px;
+    }
+
+    header .hero img {
+        width: 449px;
+        margin-right: -35px;
+    }
+
+    header .hero span {
+        margin-right: 18px;
+    }
+
+    header .hero .fa-angle-right {
+
+        margin-right: -932px;
+        margin-top: 191px;
+
+    }
+
+    header .hero .fa-angle-left {
+
+        margin-left: -932px;
+        margin-top: 191px;
+
+    }
+
+    main .Featured .cards .card .imgCard {
+        width: 305px;
+    }
+
+    main .Featured .cards .card {
+        width: 305px;
+        margin: 13px 5px;
+    }
+
+
+    main .Featured .cards .card .rate i {
+        font-size: 17px;
+
+    }
+
+
+}
+
+/*__________________________ small screen ____________________________*/
+/* Styles for small to medium screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    header .hero img {
+        width: 350px;
+        margin-right: 0px;
+    }
+
+    header .hero {
+        padding: 94px 101px;
+    }
+
+    header .hero .parghraf .p1 {
+        font-size: 26px;
+    }
+
+    header .hero .parghraf .p2 {
+        font-size: 20px;
+    }
+
+    header .hero .parghraf {
+        margin-left: 43px;
+    }
+
+    header .hero .fa-angle-right {
+        font-size: 53px;
+        margin-right: -696px;
+        margin-top: 130px;
+
+    }
+
+    header .hero .fa-angle-left {
+        font-size: 53px;
+        margin-left: -696px;
+        margin-top: 130px;
+
+    }
+
+    main .Featured {
+        padding: 12px 101px;
+    }
+
+
+}
+
+/* ____________________________mobile screen__________________ */
+@media (max-width: 767px) {
+    header .hero .contener {
+        flex-direction: column-reverse;
+    }
+
+    header .hero .fa-angle-right {
+        font-size: 37px;
+        margin-right: -250px;
+        margin-top: 170px;
+
+    }
+
+    header .hero .fa-angle-left {
+        font-size: 37px;
+        margin-left: -250px;
+        margin-top: 170px;
+    }
+    header .hero img {
+        width: 211px;
+        margin-right: 0px;
+
+    }
+
+    header .hero .parghraf {
+        margin-left: 0;
+    }
+
+    header .hero span {
+        width: 33px;
+        margin-right: -7px;
+        margin-top: 27px;
+    }
+
+    header .hero span::before {
+        margin-left: 41px;
+        width: 33px;
+
+    }
+
+    header .hero span::after {
+        width: 33px;
+        margin-left: -41px;
+    }
+
+    header .hero .parghraf .p2 {
+        font-size: 20px;
+    }
+
+    header .hero .parghraf .p1 {
+        font-size: 28px;
+    }
+
+    main .Featured .cards .card .imgCard {
+        width: 264px;
+    }
+
+    main .Featured .cards .card {
+        width: 264px;
+        margin: 13px 0px;
+    }
+
+
+
+    main .form .prod .pro img {
+        width: 214px;
+    }
+
+    main .Featured .cards .card .rate i {
+        font-size: 11px;
+    }
+
+    main .Featured .cards .card .review {
+        margin-right: 176px;
+        margin-bottom: 5px;
+    }
+
+}
